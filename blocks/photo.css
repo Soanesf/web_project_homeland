@@ -1,4 +1,8 @@
 
+.photo-grid {
+  margin: auto;
+}
+
 .photo-grid__list {
         list-style-type: none;
     display: grid;
@@ -10,4 +14,27 @@
 }
 .photo-grid__list-item {
   width: 100%;
+}
+.photo-grid__item {
+  width: 100%;
+}
+
+@media screen and (max-width:1024px) {
+  .photo-grid__list {
+    max-width: 720px;
+    margin: auto;
+  }
+  .photo-grid__list-item {
+    max-height: 264px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 544px) {
+.photo-grid__list {
+  max-width: 288px;
+}
+.photo-grid__list-item {
+  max-height: 216px;
+}
 }

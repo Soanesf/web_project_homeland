@@ -1,6 +1,9 @@
 .places {
 max-width: 984px;
 margin: auto;
+gap: 72px;
+display: grid;
+margin-top: 92px;
 }
 
 .place {
@@ -17,10 +20,9 @@ margin: auto;
         "image paragraph"
         "button paragraph"
 ;
-margin-bottom: 80px;
 }
 .place__title {
-    width: 460px;
+    max-width: 460px;
     height: auto;
     font-weight: 900;
     font-size: 72px;
@@ -57,6 +59,7 @@ margin-bottom: 80px;
     max-height: 15px;
     margin-bottom: 8px;
     color: #AAAAAA;
+    text-transform: uppercase;
 
 }
 .place__website {
@@ -70,12 +73,11 @@ margin-bottom: 80px;
 }
 .place__frame {
   max-width: 356.08px;
-  color: white;
   padding: 10px 20px;
-  border: none;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  background-image: linear-gradient(to right, #0278FE, #003A7B);
+  background: linear-gradient(90deg, #0278FE 0%, #003A7B 99.98%);
   grid-area: button;
       display: flex;
     justify-content: center;
@@ -83,8 +85,94 @@ margin-bottom: 80px;
     height: 48px;
     align-self: self-start;
 }
+.place__frame:hover {
+    background: linear-gradient(90deg, rgba(2, 120, 254, 0.25) 0%, rgba(0, 58, 123, 0.25) 99.98%);
+}
 .place__frame__buttom {
     font-size: 18px;
     font-weight: 600;
-
+    color: white;
+    text-decoration: none;
 }
+@media screen and (max-width:1024px) {
+.places {
+    max-width: 720px;
+    margin-top: 88px;
+}
+.place {
+    font-size: 42px;
+    line-height: 46px;
+    
+}
+.place__title {
+    max-width: 460px;
+    padding-left: 12px;
+}
+.place__image {
+    max-width: 340px;
+    max-height: 340px;
+}
+.place__paragraph {
+    font-size: 16px;
+    max-width: 352px;
+    padding-left: 12px;
+}
+.place__frame {
+    max-width: 355px;
+    margin:auto;
+    padding: 10px;
+}
+.place__frame__buttom {
+    max-width: 315px;
+    padding: 0;
+}
+.place__website__artist {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0%;
+}
+.place__website {
+    padding-left: 12px;
+}
+}
+
+@media screen and (max-width: 544px) {
+.places {
+    max-width: 320px;
+    margin-top: 62px;
+    display: grid;
+    gap: 50px;
+}
+.place {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 50px
+}
+.place__title {
+    font-size: 32px;
+    line-height: 35px;
+    max-width: 288px;
+    max-height: 70px;
+}
+.place__image {
+    max-width: 320px;
+    max-height: 320px;
+}
+.place__website {
+    max-width: 288px;
+}
+.place__paragraph {
+    max-width: 288px;
+    font-size: 16px;
+    margin: 0;
+}
+.place__frame {
+    max-width: 288px;
+}
+.place__frame__buttom {
+    font-size: 14px;
+    max-width: 245px;
+}
+}
+
