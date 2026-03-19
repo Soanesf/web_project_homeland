@@ -26,7 +26,7 @@ margin-top: 92px;
     height: auto;
     font-weight: 900;
     font-size: 72px;
-    line-height: 76px;
+    line-height: 1.05;
     margin: 0;
     grid-area: title;
 }
@@ -42,8 +42,13 @@ margin-top: 92px;
     font-size: 18px;
     line-height: 163%;
     max-width: 484px;
-    margin: 0 0 25px;
     grid-area: paragraph;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.place__paragraph-text {
+    margin: 0;
 }
 
 .place__paragraph-frame {
@@ -101,12 +106,15 @@ margin-top: 92px;
 }
 .place {
     font-size: 42px;
-    line-height: 46px;
+    line-height: 1.09;
+    gap: 48px 28px;
     
 }
 .place__title {
     max-width: 460px;
     padding-left: 12px;
+    font-size: 42px;
+    line-height: 1.09;
 }
 .place__image {
     max-width: 340px;
@@ -119,7 +127,6 @@ margin-top: 92px;
 }
 .place__frame {
     max-width: 355px;
-    margin:auto;
     padding: 10px;
 }
 .place__frame__buttom {
@@ -128,7 +135,7 @@ margin-top: 92px;
 }
 .place__website__artist {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.22;
     letter-spacing: 0%;
 }
 .place__website {
@@ -151,7 +158,7 @@ margin-top: 92px;
 }
 .place__title {
     font-size: 32px;
-    line-height: 35px;
+    line-height: 1.09;
     max-width: 288px;
     max-height: 70px;
 }
@@ -169,6 +176,9 @@ margin-top: 92px;
 }
 .place__frame {
     max-width: 288px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 16px;
 }
 .place__frame__buttom {
     font-size: 14px;
